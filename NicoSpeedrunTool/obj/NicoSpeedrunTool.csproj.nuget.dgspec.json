@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\Projects\\NicoSpeedrunTool\\Speedrun-tool\\NicoSpeedrunTool\\NicoSpeedrunTool.csproj": {}
+  },
+  "projects": {
+    "G:\\Projects\\NicoSpeedrunTool\\Speedrun-tool\\NicoSpeedrunTool\\NicoSpeedrunTool.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Projects\\NicoSpeedrunTool\\Speedrun-tool\\NicoSpeedrunTool\\NicoSpeedrunTool.csproj",
+        "projectName": "NicoSpeedrunTool",
+        "projectPath": "G:\\Projects\\NicoSpeedrunTool\\Speedrun-tool\\NicoSpeedrunTool\\NicoSpeedrunTool.csproj",
+        "packagesPath": "C:\\Users\\trued\\.nuget\\packages\\",
+        "outputPath": "G:\\Projects\\NicoSpeedrunTool\\Speedrun-tool\\NicoSpeedrunTool\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\trued\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net4.7.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net4.7.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net4.7.2",
+          "dependencies": {
+            "DotNetSeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

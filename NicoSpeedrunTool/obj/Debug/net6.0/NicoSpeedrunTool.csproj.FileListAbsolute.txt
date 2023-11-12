@@ -1,0 +1,17 @@
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net6.0\NicoSpeedrunTool.exe
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net6.0\NicoSpeedrunTool.deps.json
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net6.0\NicoSpeedrunTool.runtimeconfig.json
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net6.0\NicoSpeedrunTool.dll
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net6.0\NicoSpeedrunTool.pdb
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net6.0\SpeedrunComSharp.dll
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.csproj.AssemblyReference.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.GeneratedMSBuildEditorConfig.editorconfig
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.AssemblyInfoInputs.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.AssemblyInfo.cs
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.csproj.CoreCompileInputs.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.csproj.CopyComplete
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.dll
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\refint\NicoSpeedrunTool.dll
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.pdb
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\NicoSpeedrunTool.genruntimeconfig.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net6.0\ref\NicoSpeedrunTool.dll

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NicoSpeedrunTool</id>
+    <version>1.0.0</version>
+    <authors>NicoSpeedrunTool</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="DotNetSeleniumExtras.WaitHelpers" version="3.11.0" exclude="Build,Analyzers" />
+        <dependency id="NUnit" version="3.13.3" exclude="Build,Analyzers" />
+        <dependency id="Selenium.Support" version="4.8.2" exclude="Build,Analyzers" />
+        <dependency id="Selenium.WebDriver" version="4.8.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="PresentationFramework" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net4.7.2\NicoSpeedrunTool.exe" target="lib\net472\NicoSpeedrunTool.exe" />
+  </files>
+</package>

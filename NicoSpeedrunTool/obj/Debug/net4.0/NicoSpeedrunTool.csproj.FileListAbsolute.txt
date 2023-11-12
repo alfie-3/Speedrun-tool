@@ -1,0 +1,13 @@
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.csproj.AssemblyReference.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.csproj.SuggestedBindingRedirects.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.GeneratedMSBuildEditorConfig.editorconfig
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.AssemblyInfoInputs.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.AssemblyInfo.cs
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.csproj.CoreCompileInputs.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net4.0\NicoSpeedrunTool.exe.config
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net4.0\NicoSpeedrunTool.exe
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net4.0\NicoSpeedrunTool.pdb
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\bin\Debug\net4.0\SpeedrunComSharp.dll
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.csproj.CopyComplete
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.exe
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net4.0\NicoSpeedrunTool.pdb

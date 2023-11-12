@@ -1,0 +1,706 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpeedrunComSharp</name>
+    </assembly>
+    <members>
+        <member name="M:SpeedrunComSharp.CategoriesClient.GetCategoryFromSiteUri(System.String,SpeedrunComSharp.CategoryEmbeds)">
+            <summary>
+            Fetch a Category object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the category.</param>
+            <param name="embeds">Optional. If included, will dictate the embedded resources included in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.CategoriesClient.GetCategoryIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Category ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the category.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.CategoriesClient.GetCategory(System.String,SpeedrunComSharp.CategoryEmbeds)">
+            <summary>
+            Fetch a Category object identified by its ID.
+            </summary>
+            <param name="categoryId">The ID for the category.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.CategoriesClient.GetVariables(System.String,SpeedrunComSharp.VariablesOrdering)">
+            <summary>
+            Fetch a Collection of Variable objects from a category's ID.
+            </summary>
+            <param name="categoryId">The ID for the category.</param>
+            <param name="orderBy">Optional. If omitted, variables will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.CategoriesClient.GetRecords(System.String,System.Nullable{System.Int32},System.Boolean,System.Nullable{System.Int32},SpeedrunComSharp.LeaderboardEmbeds)">
+            <summary>
+            Fetch a Leaderboard object from a category's ID.
+            </summary>
+            <param name="categoryId">The ID for the category.</param>
+            <param name="top">Optional. If included, will dictate the amount of top runs included in the response.</param>
+            <param name="skipEmptyLeaderboards">Optional. If included, will dictate whether or not empty leaderboards are included in the response.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="T:SpeedrunComSharp.EmulatorsFilter">
+            <summary>
+            Filters for whether emulators are included in Leaderboards.
+            </summary>
+        </member>
+        <member name="M:SpeedrunComSharp.LeaderboardsClient.GetLeaderboardForFullGameCategory(System.String,System.String,System.Nullable{System.Int32},System.String,System.String,SpeedrunComSharp.EmulatorsFilter,System.Boolean,System.Nullable{SpeedrunComSharp.TimingMethod},System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{SpeedrunComSharp.VariableValue},SpeedrunComSharp.LeaderboardEmbeds)">
+            <summary>
+            Fetch a Leaderboard object identified by the game ID and category ID.
+            </summary>
+            <param name="gameId">The ID for the game.</param>
+            <param name="categoryId">The ID for the category.</param>
+            <param name="top">Optional. If included, will dictate the amount of top runs included in the response.</param>
+            <param name="platformId">Optional. If included, will filter runs by their platform.</param>
+            <param name="regionId">Optional. If included, will filter runs by their region.</param>
+            <param name="emulatorsFilter">Optional. If included, will filter runs by their use of emulator.</param>
+            <param name="filterOutRunsWithoutVideo">Optional. If included, will dictate whether runs without video are included in the response.</param>
+            <param name="orderBy">Optional. If omitted, runs will be in the same order as the API.</param>
+            <param name="filterOutRunsAfter">Optional. If included, will filter out runs performed after the specified DateTime.</param>
+            <param name="variableFilters">Optional. If included, will filter runs by the values present in specific variables.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.LeaderboardsClient.GetLeaderboardForLevel(System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,SpeedrunComSharp.EmulatorsFilter,System.Boolean,System.Nullable{SpeedrunComSharp.TimingMethod},System.Nullable{System.DateTime},System.Collections.Generic.IEnumerable{SpeedrunComSharp.VariableValue},SpeedrunComSharp.LeaderboardEmbeds)">
+            <summary>
+            Fetch a Leaderboard object identified by the game ID, level ID, and category ID.
+            </summary>
+            <param name="gameId">The ID for the game.</param>
+            <param name="levelId">The ID for the level.</param>
+            <param name="categoryId">The ID for the category.</param>
+            <param name="top">Optional. If included, will dictate the amount of top runs included in the response.</param>
+            <param name="platformId">Optional. If included, will filter runs by their platform.</param>
+            <param name="regionId">Optional. If included, will filter runs by their region.</param>
+            <param name="emulatorsFilter">Optional. If included, will filter runs by their use of emulator.</param>
+            <param name="filterOutRunsWithoutVideo">Optional. If included, will dictate whether runs without video are included in the response.</param>
+            <param name="orderBy">Optional. If omitted, runs will be in the same order as the API.</param>
+            <param name="filterOutRunsAfter">Optional. If included, will filter out runs performed after the specified DateTime.</param>
+            <param name="variableFilters">Optional. If included, will filter runs by the values present in specific variables.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.LeaderboardEmbeds.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Options for embedding resources in Leaderboard responses.
+            </summary>
+            <param name="embedGame">Dictates whether a Game object is included in the response.</param>
+            <param name="embedCategory">Dictates whether a Category object is included in the response.</param>
+            <param name="embedLevel">Dictates whether a Level object is included in the response.</param>
+            <param name="embedPlayers">Dictates whether a Collection of Player objects is included in the response.</param>
+            <param name="embedRegions">Dictates whether a Collection of Region objects is included in the response.</param>
+            <param name="embedPlatforms">Dictates whether a Collection of Platform objects is included in the response.</param>
+            <param name="embedVariables">Dictates whether a Collection of Variable objects is included in the response.</param>
+        </member>
+        <member name="M:SpeedrunComSharp.NotificationsClient.GetNotifications(System.Nullable{System.Int32},SpeedrunComSharp.NotificationsOrdering)">
+            <summary>
+            Fetch a Collection of Notification objects. Authentication is required for this action.
+            </summary>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="ordering">Optional. If omitted, notifications will be from newest to oldest.</param>
+            <returns></returns>
+        </member>
+        <member name="T:SpeedrunComSharp.NotificationsOrdering">
+            <summary>
+            Options for ordering Notifications in responses.
+            </summary>
+        </member>
+        <member name="T:SpeedrunComSharp.SeriesOrdering">
+            <summary>
+            Options for ordering Series in responses.
+            </summary>
+        </member>
+        <member name="M:SpeedrunComSharp.SeriesEmbeds.#ctor(System.Boolean)">
+            <summary>
+            Options for embedding resources in Series responses.
+            </summary>
+            <param name="embedModerators">Dictates whether a Collection of User objects containing each moderator is included in the response.</param>
+        </member>
+        <member name="P:SpeedrunComSharp.Series.Moderators">
+            <summary>
+            null when embedded
+            </summary>
+        </member>
+        <member name="M:SpeedrunComSharp.SeriesClient.GetSeriesFromSiteUri(System.String,SpeedrunComSharp.SeriesEmbeds)">
+            <summary>
+            Fetch a Series object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the series.</param>
+            <param name="embeds">Optional. If included, will dictate the embedded resources included in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.SeriesClient.GetSeriesIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Series ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the series.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.SeriesClient.GetMultipleSeries(System.String,System.String,System.String,System.Nullable{System.Int32},SpeedrunComSharp.SeriesEmbeds,SpeedrunComSharp.SeriesOrdering)">
+            <summary>
+            Fetch a Collection of Series objects identified by the parameters provided.
+            </summary>
+            <param name="name">Optional. If included, will filter series by their name.</param>
+            <param name="abbreviation">Optional. If included, will filter series by their abbreviation.</param>
+            <param name="moderatorId">Optional. If included, will filter series by their moderators.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <param name="orderBy">Optional. If omitted, series will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.SeriesClient.GetSingleSeries(System.String,SpeedrunComSharp.SeriesEmbeds)">
+            <summary>
+            Fetch a Series object identified by its ID.
+            </summary>
+            <param name="seriesId">The ID of the series.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.SeriesClient.GetGames(System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},SpeedrunComSharp.GameEmbeds,SpeedrunComSharp.GamesOrdering)">
+            <summary>
+            
+            </summary>
+            <param name="seriesId">The ID of the series.</param>
+            <param name="name">Optional. If included, will filter series by their name.</param>
+            <param name="yearOfRelease">Optional. If included, will filter series by their release year.</param>
+            <param name="platformId">Optional. If included, will filter series by their platform.</param>
+            <param name="regionId">Optional. If included, will filter series by their region.</param>
+            <param name="moderatorId">Optional. If included, will filter series by their moderators.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <param name="orderBy">Optional. If omitted, series will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="T:SpeedrunComSharp.UsersOrdering">
+            <summary>
+            Options for ordering Users in responses.
+            </summary>
+        </member>
+        <member name="T:SpeedrunComSharp.RunsOrdering">
+            <summary>
+            Options for ordering Runs in responses.
+            </summary>
+        </member>
+        <member name="T:SpeedrunComSharp.RegionsOrdering">
+            <summary>
+            Options for ordering Regions in responses.
+            </summary>
+        </member>
+        <member name="T:SpeedrunComSharp.PlatformsOrdering">
+            <summary>
+            Options for ordering Platforms in responses.
+            </summary>
+        </member>
+        <member name="T:SpeedrunComSharp.LevelsOrdering">
+            <summary>
+            Options for ordering Levels in responses.
+            </summary>
+        </member>
+        <member name="T:SpeedrunComSharp.CategoriesOrdering">
+            <summary>
+            Options for ordering Categories in responses.
+            </summary>
+        </member>
+        <member name="T:SpeedrunComSharp.GamesOrdering">
+            <summary>
+            Options for ordering Games in responses.
+            </summary>
+        </member>
+        <member name="T:SpeedrunComSharp.VariablesOrdering">
+            <summary>
+            Options for ordering Variables in responses.
+            </summary>
+        </member>
+        <member name="M:SpeedrunComSharp.CategoryEmbeds.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Options for embedding resources in Category responses.
+            </summary>
+            <param name="embedGame">Dictates whether a Game object is included in the response.</param>
+            <param name="embedVariables">Dictates whether a Collection of Variable objects is included in the response.</param>
+        </member>
+        <member name="P:SpeedrunComSharp.Game.Moderators">
+            <summary>
+            null when embedded
+            </summary>
+        </member>
+        <member name="M:SpeedrunComSharp.GameEmbeds.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Options for embedding resources in Game responses.
+            </summary>
+            <param name="embedLevels">Dictates whether a Collection of Level objects is included in the response.</param>
+            <param name="embedCategories">Dictates whether a Collection of Category objects is included in the response.</param>
+            <param name="embedModerators">Dictates whether a Collection of User objects containing each moderator is included in the response.</param>
+            <param name="embedPlatforms">Dictates whether a Collection of Platform objects is included in the response.</param>
+            <param name="embedRegions">Dictates whether a Collection of Region objects is included in the response.</param>
+            <param name="embedVariables">Dictates whether a Collection of Variable objects is included in the response.</param>
+        </member>
+        <member name="T:SpeedrunComSharp.GameHeader">
+            <summary>
+            An optimized class for simple data for games.
+            </summary>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetGameFromSiteUri(System.String,SpeedrunComSharp.GameEmbeds)">
+            <summary>
+            Fetch a Game object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the game.</param>
+            <param name="embeds">Optional. If included, will dictate the embedded resources included in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetGameIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Game ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the game.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetGames(System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},SpeedrunComSharp.GameEmbeds,SpeedrunComSharp.GamesOrdering)">
+            <summary>
+            Fetch a Collection of Game objects identified by the parameters provided.
+            </summary>
+            <param name="name">Optional. If included, will filter games by their name.</param>
+            <param name="yearOfRelease">Optional. If included, will filter games by their release year.</param>
+            <param name="platformId">Optional. If included, will filter games by their platform.</param>
+            <param name="regionId">Optional. If included, will filter games by their region.</param>
+            <param name="moderatorId">Optional. If included, will filter games by their moderators.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <param name="orderBy">Optional. If omitted, games will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetGameHeaders(System.Int32,SpeedrunComSharp.GamesOrdering)">
+            <summary>
+            Fetch a Collection of GameHeader objects.
+            </summary>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="orderBy">Optional. If omitted, gameheaders will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetGame(System.String,SpeedrunComSharp.GameEmbeds)">
+            <summary>
+            Fetch a Game object identified by its ID.
+            </summary>
+            <param name="gameId">The ID for the game.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.SearchGame(System.String,SpeedrunComSharp.GameEmbeds)">
+            <summary>
+            Fetch a Game object identified by its name.
+            </summary>
+            <param name="name">The name of the game.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.SearchGameExact(System.String,SpeedrunComSharp.GameEmbeds)">
+            <summary>
+            Fetch a Game object identified by its name with an exact match.
+            </summary>
+            <param name="name">The name of the game.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetCategories(System.String,System.Boolean,SpeedrunComSharp.CategoryEmbeds,SpeedrunComSharp.CategoriesOrdering)">
+            <summary>
+            Fetch a Collection of Category objects from a game's ID.
+            </summary>
+            <param name="gameId">The ID for the game.</param>
+            <param name="miscellaneous">Optional. If included, will dictate whether miscellaneous categories are included.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <param name="orderBy">Optional. If omitted, categories will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetLevels(System.String,SpeedrunComSharp.LevelEmbeds,SpeedrunComSharp.LevelsOrdering)">
+            <summary>
+            Fetch a Collection of Level objects from a game's ID.
+            </summary>
+            <param name="gameId">The ID for the game.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <param name="orderBy">Optional. If omitted, levels will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetVariables(System.String,SpeedrunComSharp.VariablesOrdering)">
+            <summary>
+            Fetch a Collection of Variable objects from a game's ID.
+            </summary>
+            <param name="gameId">The ID for the category.</param>
+            <param name="orderBy">Optional. If omitted, variables will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetRomHacks(System.String,SpeedrunComSharp.GameEmbeds,SpeedrunComSharp.GamesOrdering)">
+            <summary>
+            Fetch a Collection of Game objects derived from a game's ID.
+            </summary>
+            <param name="gameId">The ID for the game.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <param name="orderBy">Optional. If omitted, games will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GamesClient.GetRecords(System.String,System.Nullable{System.Int32},SpeedrunComSharp.LeaderboardScope,System.Boolean,System.Boolean,System.Nullable{System.Int32},SpeedrunComSharp.LeaderboardEmbeds)">
+            <summary>
+            Fetch a Leaderboard object from a game's ID.
+            </summary>
+            <param name="gameId">The ID for the game.</param>
+            <param name="top">Optional. If included, will dictate the amount of top runs included in the response.</param>
+            <param name="scope">Optional. If included, will dictate the scope of the Leaderboard included in the response.</param>
+            <param name="includeMiscellaneousCategories">Optional. If included, will dictate whether miscellaneous categories are included.</param>
+            <param name="skipEmptyLeaderboards">Optional. If included, will dictate whether or not empty leaderboards are included in the response.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GuestsClient.GetGuestFromSiteUri(System.String)">
+            <summary>
+            Fetch a Guest object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the guest.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GuestsClient.GetGuestIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Guest ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the guest.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.GuestsClient.GetGuest(System.String)">
+            <summary>
+            Fetch a Guest object identified by its name.
+            </summary>
+            <param name="guestName">The name of the guest.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.LevelEmbeds.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Options for embedding resources in Level responses.
+            </summary>
+            <param name="embedCategories">Dictates whether a Collection of Category objects is included in the response.</param>
+            <param name="embedVariables">Dictates whether a Collection of Variable objects is included in the response.</param>
+        </member>
+        <member name="M:SpeedrunComSharp.LevelsClient.GetLevelFromSiteUri(System.String,SpeedrunComSharp.LevelEmbeds)">
+            <summary>
+            Fetch a Level object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the level.</param>
+            <param name="embeds">Optional. If included, will dictate the embedded resources included in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.LevelsClient.GetLevelIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Level ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the level.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.LevelsClient.GetLevel(System.String,SpeedrunComSharp.LevelEmbeds)">
+            <summary>
+            Fetch a Level object identified by its ID.
+            </summary>
+            <param name="levelId">The ID for the level.</param>
+            <param name="embeds">Optional. If included, will dictate the embedded resources included in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.LevelsClient.GetCategories(System.String,System.Boolean,SpeedrunComSharp.CategoryEmbeds,SpeedrunComSharp.CategoriesOrdering)">
+            <summary>
+            Fetch a Collection of Category objects from a level's ID.
+            </summary>
+            <param name="levelId">The ID for the level.</param>
+            <param name="miscellaneous">Optional. If included, will dictate whether miscellaneous categories are included.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <param name="orderBy">Optional. If omitted, categories will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.LevelsClient.GetVariables(System.String,SpeedrunComSharp.VariablesOrdering)">
+            <summary>
+            Fetch a Collection of Variable objects from a level's ID.
+            </summary>
+            <param name="levelId">The ID for the level.</param>
+            <param name="orderBy">Optional. If omitted, variables will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.LevelsClient.GetRecords(System.String,System.Nullable{System.Int32},System.Boolean,System.Nullable{System.Int32},SpeedrunComSharp.LeaderboardEmbeds)">
+            <summary>
+            Fetch a Leaderboard object from a level's ID.
+            </summary>
+            <param name="levelId">The ID for the level.</param>
+            <param name="top">Optional. If included, will dictate the amount of top runs included in the response.</param>
+            <param name="skipEmptyLeaderboards">Optional. If included, will dictate whether or not empty leaderboards are included in the response.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.PlatformsClient.GetPlatformFromSiteUri(System.String)">
+            <summary>
+            Fetch a Platform object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the platform.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.PlatformsClient.GetPlatformIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Platform ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the platform.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.PlatformsClient.GetPlatforms(System.Nullable{System.Int32},SpeedrunComSharp.PlatformsOrdering)">
+            <summary>
+            Fetch a Collection of Platform objects.
+            </summary>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="orderBy">Optional. If omitted, platforms will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.PlatformsClient.GetPlatform(System.String)">
+            <summary>
+            Fetch a Platform object identified by its ID.
+            </summary>
+            <param name="platformId">The ID for the platform.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RegionsClient.GetRegionFromSiteUri(System.String)">
+            <summary>
+            Fetch a Region object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the region.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RegionsClient.GetRegionIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Region ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the region.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RegionsClient.GetRegions(System.Nullable{System.Int32},SpeedrunComSharp.RegionsOrdering)">
+            <summary>
+            Fetch a Collection of Region objects.
+            </summary>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="orderBy">Optional. If omitted, regions will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RegionsClient.GetRegion(System.String)">
+            <summary>
+            Fetch a Region object identified by its ID.
+            </summary>
+            <param name="regionId">The ID for the region.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RunEmbeds.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Options for embedding resources in Run responses.
+            </summary>
+            <param name="embedGame">Dictates whether a Game object is included in the response.</param>
+            <param name="embedCategory">Dictates whether a Category object is included in the response.</param>
+            <param name="embedLevel">Dictates whether a Level object is included in the response.</param>
+            <param name="embedPlayers">Dictates whether a Collection of Runner objects containing each runner is included in the response.</param>
+            <param name="embedRegion">Dictates whether a Region object is included in the response.</param>
+            <param name="embedPlatform">Dictates whether a Platform object is included in the response.</param>
+        </member>
+        <member name="M:SpeedrunComSharp.RunsClient.GetRunFromSiteUri(System.String,SpeedrunComSharp.RunEmbeds)">
+            <summary>
+            Fetch a Run object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the run.</param>
+            <param name="embeds">Optional. If included, will dictate the embedded resources included in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RunsClient.GetRunIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Run ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the run.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RunsClient.GetRuns(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Nullable{SpeedrunComSharp.RunStatusType},System.Nullable{System.Int32},SpeedrunComSharp.RunEmbeds,SpeedrunComSharp.RunsOrdering)">
+            <summary>
+            Fetch a Collection of Run objects identified by the parameters provided.
+            </summary>
+            <param name="userId">Optional. If included, will filter runs by the user ID of the runner(s).</param>
+            <param name="guestName">Optional. If included, will filter runs by the name of the guest runner(s).</param>
+            <param name="examerUserId">Optional. If included, will filter runs by the user ID of the examiner.</param>
+            <param name="gameId">Optional. If included, will filter runs by the ID of the corresponding game.</param>
+            <param name="levelId">Optional. If included, will filter runs by the ID of the corresponding level.</param>
+            <param name="categoryId">Optional. If included, will filter runs by the ID of the corresponding category</param>
+            <param name="platformId">Optional. If included, will filter runs by their platform.</param>
+            <param name="regionId">Optional. If included, will filter runs by their region.</param>
+            <param name="onlyEmulatedRuns">Optional. If included, will filter runs by their use of emulator.</param>
+            <param name="status">Optional. If included, will filter runs by their verification status.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <param name="orderBy">Optional. If omitted, runs will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RunsClient.GetRun(System.String,SpeedrunComSharp.RunEmbeds)">
+            <summary>
+            Fetch a Run object identified by its ID.
+            </summary>
+            <param name="runId">The ID of the run.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.RunsClient.Submit(System.String,System.String,System.String,System.Nullable{System.DateTime},System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{System.Boolean},System.Uri,System.String,System.Uri,System.Collections.Generic.IEnumerable{SpeedrunComSharp.VariableValue},System.Nullable{System.Boolean},System.Boolean)">
+            <summary>
+            Posts a Run object to Speedrun.com. Authentication is required for this action.
+            </summary>
+            <param name="categoryId">The ID of the category.</param>
+            <param name="platformId">The ID of the platform.</param>
+            <param name="levelId">Optional. If included, dictates the ID of the level.</param>
+            <param name="date">Optional. If included, dictates the date of the run.</param>
+            <param name="regionId">Optional. If included, dictates the ID of the region.</param>
+            <param name="realTime">Optional. If included, dictates real time.</param>
+            <param name="realTimeWithoutLoads">Optional. If included, dictates Real Time without loads.</param>
+            <param name="gameTime">Optional. If included, dictates in game time.</param>
+            <param name="emulated">Optional. If included, dictates whether the run was performed on emulator.</param>
+            <param name="videoUri">Optional. If included, dictates the URI of the video.</param>
+            <param name="comment">Optional. If included, dictates the comment of the run.</param>
+            <param name="splitsIOUri">Optional. If included, dictates the URI of the Splits.IO page for the run.</param>
+            <param name="variables">Optional. If included, dictates the variable values for the run.</param>
+            <param name="verify">Optional. If included, dictates whether the run is verified automatically upon submitting.</param>
+            <param name="simulateSubmitting">Optional. If included, dictates whether the run submission process is simulated.</param>
+            <returns></returns>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Categories">
+            <summary>
+            Methods for interacting with Categories.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Games">
+            <summary>
+            Methods for interacting with Games.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Guests">
+            <summary>
+            Methods for interacting with Guest users.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Leaderboards">
+            <summary>
+            Methods for interacting with Leaderboards.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Levels">
+            <summary>
+            Methods for interacting with Levels.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Notifications">
+            <summary>
+            Methods for interacting with Notifications.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Platforms">
+            <summary>
+            Methods for interacting with Platforms.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Regions">
+            <summary>
+            Methods for interacting with Regions.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Runs">
+            <summary>
+            Methods for interacting with Runs.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Series">
+            <summary>
+            Methods for interacting with Series.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Users">
+            <summary>
+            Methods for interacting with Users.
+            </summary>
+        </member>
+        <member name="P:SpeedrunComSharp.SpeedrunComClient.Variables">
+            <summary>
+            Methods for interacting with Variables.
+            </summary>
+        </member>
+        <member name="M:SpeedrunComSharp.UsersClient.GetUserFromSiteUri(System.String)">
+            <summary>
+            Fetch a User object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the user.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.UsersClient.GetUserIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a User ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI for the user.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.UsersClient.GetUsers(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},SpeedrunComSharp.UsersOrdering)">
+            <summary>
+            Fetch a Collection of User objects identified by the parameters provided.
+            </summary>
+            <param name="name">Optional. If included, will filter users by their name.</param>
+            <param name="twitch">Optional. If included, will filter users by their linked Twitch account username.</param>
+            <param name="hitbox">Optional. If included, will filter users by their linked Hitbox account username.</param>
+            <param name="twitter">Optional. If included, will filter users by their linked Twitter account username.></param>
+            <param name="speedrunslive">Optional. If included, will filter users by their linked SpeedrunsLive account username.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="orderBy">Optional. If omitted, users will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.UsersClient.GetUsersFuzzy(System.String,System.Nullable{System.Int32},SpeedrunComSharp.UsersOrdering)">
+            <summary>
+            Fetch a Collection of User objects identified by their fuzzy (vague) username.
+            </summary>
+            <param name="fuzzyName">Optional. If included, dictates the fuzzy name of the user.</param>
+            <param name="elementsPerPage">Optional. If included, will dictate the amount of elements included in each pagination.</param>
+            <param name="orderBy">Optional. If omitted, users will be in the same order as the API.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.UsersClient.GetUser(System.String)">
+            <summary>
+            Fetch a User object identified by its ID.
+            </summary>
+            <param name="userId">The ID of the user.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.UsersClient.GetPersonalBests(System.String,System.Nullable{System.Int32},System.String,System.String,SpeedrunComSharp.RunEmbeds)">
+            <summary>
+            Fetch a Collection of Record objects of a user's personal bests identified by their ID.
+            </summary>
+            <param name="userId">The ID of the user.</param>
+            <param name="top">Optional. If included, will dictate the amount of top runs included in the response.</param>
+            <param name="seriesId">Optional. If included, will filter runs by their targetted game's series ID.</param>
+            <param name="gameId">Optional. If included, will filter runs by their targetted game's ID.</param>
+            <param name="embeds">Optional. If included, will dictate the additional resources embedded in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.VariablesClient.GetVariableFromSiteUri(System.String)">
+            <summary>
+            Fetch a Variable object identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI of the variable.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.VariablesClient.GetVariableIDFromSiteUri(System.String)">
+            <summary>
+            Fetch a Variable ID identified by its URI.
+            </summary>
+            <param name="siteUri">The site URI of the variable.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SpeedrunComSharp.VariablesClient.GetVariable(System.String)">
+            <summary>
+            Fetch a Variable object identified by its ID.
+            </summary>
+            <param name="variableId">The ID of the variable.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

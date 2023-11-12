@@ -1,0 +1,6 @@
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net3.5\NicoSpeedrunTool.csproj.AssemblyReference.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net3.5\NicoSpeedrunTool.csproj.SuggestedBindingRedirects.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net3.5\NicoSpeedrunTool.GeneratedMSBuildEditorConfig.editorconfig
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net3.5\NicoSpeedrunTool.AssemblyInfoInputs.cache
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net3.5\NicoSpeedrunTool.AssemblyInfo.cs
+W:\Projects\NicoSpeedrunTool\NicoSpeedrunTool\NicoSpeedrunTool\obj\Debug\net3.5\NicoSpeedrunTool.csproj.CoreCompileInputs.cache

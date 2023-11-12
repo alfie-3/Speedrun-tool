@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "NicoSpeedrunTool/1.0.0": {
+        "dependencies": {
+          "SpeedrunComSharp": "1.0.0.0"
+        },
+        "runtime": {
+          "NicoSpeedrunTool.dll": {}
+        }
+      },
+      "SpeedrunComSharp/1.0.0.0": {
+        "runtime": {
+          "SpeedrunComSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NicoSpeedrunTool/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SpeedrunComSharp/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

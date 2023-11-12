@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "yibeaIYEIq+3zBVimQSv8uf+HzGvuq95pAo+vsDWB0YpUfLpgtTodPJXeaxfgFm/0JMViPBmdXNa00tOOOah4A==",
+  "success": true,
+  "projectFilePath": "G:\\Projects\\NicoSpeedrunTool\\Speedrun-tool\\NicoSpeedrunTool\\NicoSpeedrunTool.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\trued\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "C:\\Users\\trued\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\trued\\.nuget\\packages\\selenium.support\\4.8.2\\selenium.support.4.8.2.nupkg.sha512",
+    "C:\\Users\\trued\\.nuget\\packages\\selenium.webdriver\\4.8.2\\selenium.webdriver.4.8.2.nupkg.sha512"
+  ],
+  "logs": []
+}
